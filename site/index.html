@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSICWORK - Consultoria & Assessoria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #e9f0ff 0%, #ffffff 100%);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #0d47a1, #1976d2);
+      color: #fff;
+      padding: 60px 20px 20px;
+      text-align: center;
+      position: relative;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #0d47a1;
+      padding: 10px 0;
+      z-index: 999;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 20px 40px;
+      background: white;
+    }
+    h1, h2 {
+      color: #0d47a1;
+    }
+    .section {
+      margin-bottom: 60px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+    .team div {
+      padding: 20px;
+      border-radius: 12px;
+      background: #f0f4ff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+    }
+    .team div:hover {
+      transform: translateY(-10px);
+    }
+    .team img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      transition: transform 0.4s ease;
+    }
+    .team img:hover {
+      transform: scale(1.3);
+    }
+    .planos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .plano {
+      flex: 1;
+      min-width: 250px;
+      border: 1px solid #ddd;
+      padding: 30px;
+      border-radius: 10px;
+      background: #f9f9f9;
+      transition: box-shadow 0.3s;
+    }
+    .plano:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #0d47a1;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .footer-info {
+      margin-top: 10px;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#missao">Missão & Visão</a>
+    <a href="#time">Equipe</a>
+    <a href="#planos">Planos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <header>
+    <img src="logo.png" alt="Logo PSICWORK" style="max-width: 300px; height: auto; margin-bottom: 20px; transition: transform 0.5s ease-in-out;" onmouseover="this.style.transform='scale(2)'" onmouseout="this.style.transform='scale(1)'">
+    <h1>PSICWORK</h1>
+    <p>Consultoria & Assessoria em Psicologia LTDA</p>
+  </header>
+
+  <div class="container">
+    <section id="quem-somos" class="section">
+      <h2>Quem Somos</h2>
+      <p>Idealizada em 2024 no curso Técnico em RH por Aline Ferreira, Brenda Lima, Jeyne Monteiro e Júlia Souza. Atuamos com soluções inovadoras em psicologia organizacional e saúde mental, alinhadas à nova NR1.</p>
+    </section>
+
+    <section id="servicos" class="section">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Consultoria organizacional</li>
+        <li>Psicologia do trabalho</li>
+        <li>Treinamentos e desenvolvimento</li>
+        <li>Recrutamento e seleção</li>
+        <li>Planos de cargos e salários</li>
+        <li>Atendimento psicológico para empresas</li>
+      </ul>
+    </section>
+
+    <section id="missao" class="section">
+      <h2>Missão & Visão</h2>
+      <p><strong>Missão:</strong> Soluções eficazes e humanizadas promovendo saúde mental e valorização profissional.</p>
+      <p><strong>Visão:</strong> Ser referência nacional e internacional em valorização humana no ambiente corporativo.</p>
+    </section>
+
+    <section id="time" class="section">
+      <h2>Nosso Time</h2>
+      <div class="team">
+        <div><img src="jeyne.png" alt="Jeyne Monteiro"><strong>Jeyne Monteiro</strong><br>CEO</div>
+        <div><img src="brenda.png" alt="Brenda Lima"><strong>Brenda Lima</strong><br>Sócia</div>
+        <div><img src="julia.png" alt="Júlia Souza"><strong>Júlia Souza</strong><br>Sócia</div>
+        <div><img src="aline.png" alt="Aline Ferreira"><strong>Aline Ferreira</strong><br>Sócia</div>
+      </div>
+    </section>
+
+    <section id="planos" class="section">
+      <h2>Planos</h2>
+      <div class="planos">
+        <div class="plano">
+          <h3>Plano Simples</h3>
+          <p>R$59,90</p>
+          <p>Serviços básicos de consultoria e apoio psicológico.</p>
+        </div>
+        <div class="plano">
+          <h3>Plano Médio</h3>
+          <p>R$69,90</p>
+          <p>Inclui estruturação de cargos e treinamentos especializados.</p>
+        </div>
+        <div class="plano">
+          <h3>Plano Premium</h3>
+          <p>R$99,90</p>
+          <p>Consultoria completa + suporte contínuo em RH e psicologia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <h2>Contato</h2>
+      <p><strong>Telefone:</strong> (12) 3456-7890</p>
+      <p><strong>Email:</strong> ola@grandesite.com.br</p>
+      <p><strong>Endereço:</strong> Rua Alegre, 123, Cidade Brasileira</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>Obrigado por visitar a PSICWORK!</p>
+    <div class="footer-info">Edifício Trade Center – Funcionamento: Seg a Sex, 8h às 18h</div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
